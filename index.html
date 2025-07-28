@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/flexboxgrid.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e97f7b28c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-right">
+          <a href=""><i class="fa-solid fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href=""><i class="fa-solid fa-house-crack"></i></a>
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="nav-left">
+          <div class="login">
+            <i class="fa-solid fa-user"></i>
+            <a href="">ثبت نام / ورود</a>
+          </div>
+        </div>
+      </nav>
+      <section class="slider">
+        <div class="sliders">
+          <div class="item active" id="slide1">
+            <img src="/images/طراحی بدون عنوان (1).jpg" alt="" />
+            <div class="text-image">
+              <h1>70% OFF</h1>
+              <p>
+                هرچه شیک تر،خاص تر
+                <br />
+                با مردیسو شیک بپوش
+              </p>
+            </div>
+          </div>
+          <div class="item" id="slide2">
+            <img src="/images/طراحی بدون عنوان (2).jpg" alt="" />
+            <div class="text-image">
+              <h1>orginal</h1>
+              <p>
+                دیگه چی لازم داری؟
+                <br />
+                تنوع بالا،رنگ هایه خاص!
+              </p>
+            </div>
+          </div>
+          <div class="item" id="slide3">
+            <img src="/images/طراحی بدون عنوان (3).jpg" alt="" />
+            <div class="text-image">
+              <h1>perfect</h1>
+              <p>
+                استایل بزن نو شو
+                <br />
+                کمترین قیمت،بالاترین کیفیت
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <i onclick="setslide('slide1' , 1)" class="fa-solid fa-circle"></i>
+          <i onclick="setslide('slide2' , 2)" class="fa-solid fa-circle"></i>
+          <i onclick="setslide('slide3' , 3)" class="fa-solid fa-circle"></i>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="home-page-product-section">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/t-blue.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">تیشرت zara ساده آبی</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">800 هزار تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/T-orange.png" alt="" />
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">تیشرت ساده زارا نارنجی</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">800 هزار تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/T-pink.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">تیشرت ساده زارا صورتی</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">800 هزار تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/T-purple.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">تیشرت ساده زارا بنفش</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">950 هزار تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="supper-offer-section">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="supper-offer-box">
+              <span class="title-offer2"> پیشنهاد شگفت انگیز </span>
+              <div class="body-offer">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="image-offer">
+                      <img src="/images/1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="box-offer">
+                      <div class="price-row">
+                        <div class="price-offer">1 میلیون تومان</div>
+                        <div class="off">70 % تخفیف</div>
+                      </div>
+                      <div class="title-offer">ست تیشرت و شلوارک زارا</div>
+                      <div class="counter-down">
+                        <span id="seconds">40</span> :
+                        <span id="minutes">26</span> :
+                        <span id="hours">19</span>
+                      </div>
+                      <div class="remaining-time">
+                        زمان باقی مانده تا پایان سفارش
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="banner">
+              <img src="/images/فروش ویژه.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dragble-list">
+        <div class="title">
+          <span>کاپشن چرم</span>
+        </div>
+        <div id="owl-product" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket3.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم ذغالی</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">1,800,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket4.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم یقه انگلیسی پتینه</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">2,000,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket5.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم یقه انگلیسی سبز</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">1,400,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket6.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپ چرم یقه انگلیسی قهوه ای</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">1,400,000</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket2.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم خلبانی سفید-قرمز</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">1,000,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket1.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم یقه انگلیسی آبی</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">1,800,000</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket7.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم یقه انگلیسی</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">1,800,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket8.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم سفید</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">800,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="/images/jacket9.png" alt="" />
+                <span class="offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="title">کاپشن چرم قهوه ای</div>
+              <div class="buttonss">
+                <div class="b-right">
+                  <span class="price">800,000 تومان</span>
+                </div>
+                <div class="b-left">
+                  <div class="extend">
+                    <a class="b-text" href="">علاقه</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-heart"></i
+                    ></a>
+                  </div>
+                  <div class="extend">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="right">
+            <div class="title">درباره ما</div>
+            <div class="des">
+              فروشگاه لباس مردانه مردیسو از سال 1404 با هدف ایجاد بستری مناسب و
+              مطمئن و نیز راحتی هرچه بیشتر مشتریان، برای خرید حضوری و غیرحضوری
+              پوشاک مردانه شروع به فعالیت نمود. ما با ارائه انواع البسه مردانه
+              نظیر: انواع پیراهن مردانه (پیراهن های رسمی، یقه دپلمات، آستین
+              کوتاه، چهارخانه، جین و...)، انواع شلوار مردانه (شلوارهای پارچه ای،
+              کتان، جین واسلش)، انواع تیشرت و پولوشرت و انواع کت، جلیقه، سویشرت،
+              کاپشن، پلیور و ... همچنین انواع کفش های مردانه (کفش های رسمی،
+              روزمره و ورزشی) و اکسسوری هایی نظیر کمربند، کلاه و... به دنبال
+              ارائه تجربه ای راحت و لذت بخش از خرید اینترنتی برای مشتریان می
+              باشیم.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="left">
+            <div class="title">ما را در شبکه های اجتماعی دنبال کنید :</div>
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">کلیه حقوق محفوظ می باشد2025 ⓒ</div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+  </body>
+</html>
